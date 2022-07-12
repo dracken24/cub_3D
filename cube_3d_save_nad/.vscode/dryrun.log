@@ -1,0 +1,190 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/dracken24/Desktop/prog/42_en_cours/cube_3d'
+rm -f  cube_3D 
+rm -fr ./objs ./minilibx/mlx-linux/obj/ ./minilibx/opengl/obj/
+make fclean -C ./src/libft
+ 
+make[1]: Entering directory '/home/dracken24/Desktop/prog/42_en_cours/cube_3d/src/libft'
+rm -f math/ft_ultimate_range.o math/ft_putnbr.o math/ft_range.o math/ft_swap.o math/ft_rev_int_tab.o math/ft_nbrlen.o math/ft_putnbr_fd.o math/ft_swap.o math/ft_p_or_imp.o math/ft_array_len.o mem_alloc/ft_bzero.o mem_alloc/ft_calloc.o lst/ft_lstmap.o lst/ft_lstiter.o lst/ft_lstclear.o lst/ft_lstdelone.o lst/ft_lstadd_back.o lst/ft_lstlast.o lst/ft_lstsize.o lst/ft_lstadd_front.o lst/ft_lstnew.o str/ft_strlen.o str/ft_strlcpy.o str/ft_strlcat.o str/ft_strrchr.o str/ft_strncmp.o str/ft_strnstr.o str/ft_strtrim.o str/ft_strmapi.o str/ft_striteri.o str/ft_strdup.o str/ft_substr.o str/ft_strjoin.o str/ft_strcat.o str/ft_putchar_fd.o str/ft_putstr_fd.o str/ft_toupper.o str/ft_tolower.o str/ft_strmapi.o str/ft_striteri.o str/ft_putendl_fd.o str/ft_strchr.o str/ft_split.o mem_move/ft_memset.o mem_move/ft_memmove.o mem_move/ft_memcmp.o mem_move/ft_memcpy.o is/ft_isalpha.o is/ft_isdigit.o is/ft_isalnum.o is/ft_isascii.o is/ft_isprint.o atoitoa/ft_atoi.o atoitoa/ft_itoa.o 
+rm -f libft.a
+make[1]: Leaving directory '/home/dracken24/Desktop/prog/42_en_cours/cube_3d/src/libft'
+echo [32m"BYE BYE""\033[0m"
+rm -f cube3D src/libft/libft.a
+make -C ./src/libft
+ 
+make: Circular all <- all dependency dropped.
+
+make[1]: Entering directory '/home/dracken24/Desktop/prog/42_en_cours/cube_3d/src/libft'
+gcc -Wall -Werror -Wextra   -c -o math/ft_ultimate_range.o math/ft_ultimate_range.c
+gcc -Wall -Werror -Wextra   -c -o math/ft_putnbr.o math/ft_putnbr.c
+gcc -Wall -Werror -Wextra   -c -o math/ft_range.o math/ft_range.c
+gcc -Wall -Werror -Wextra   -c -o math/ft_swap.o math/ft_swap.c
+gcc -Wall -Werror -Wextra   -c -o math/ft_rev_int_tab.o math/ft_rev_int_tab.c
+gcc -Wall -Werror -Wextra   -c -o math/ft_nbrlen.o math/ft_nbrlen.c
+gcc -Wall -Werror -Wextra   -c -o math/ft_putnbr_fd.o math/ft_putnbr_fd.c
+gcc -Wall -Werror -Wextra   -c -o math/ft_p_or_imp.o math/ft_p_or_imp.c
+gcc -Wall -Werror -Wextra   -c -o math/ft_array_len.o math/ft_array_len.c
+ 
+gcc -Wall -Werror -Wextra   -c -o mem_alloc/ft_bzero.o mem_alloc/ft_bzero.c
+gcc -Wall -Werror -Wextra   -c -o mem_alloc/ft_calloc.o mem_alloc/ft_calloc.c
+ 
+gcc -Wall -Werror -Wextra   -c -o lst/ft_lstmap.o lst/ft_lstmap.c
+gcc -Wall -Werror -Wextra   -c -o lst/ft_lstiter.o lst/ft_lstiter.c
+gcc -Wall -Werror -Wextra   -c -o lst/ft_lstclear.o lst/ft_lstclear.c
+gcc -Wall -Werror -Wextra   -c -o lst/ft_lstdelone.o lst/ft_lstdelone.c
+gcc -Wall -Werror -Wextra   -c -o lst/ft_lstadd_back.o lst/ft_lstadd_back.c
+gcc -Wall -Werror -Wextra   -c -o lst/ft_lstlast.o lst/ft_lstlast.c
+gcc -Wall -Werror -Wextra   -c -o lst/ft_lstsize.o lst/ft_lstsize.c
+gcc -Wall -Werror -Wextra   -c -o lst/ft_lstadd_front.o lst/ft_lstadd_front.c
+gcc -Wall -Werror -Wextra   -c -o lst/ft_lstnew.o lst/ft_lstnew.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_strlen.o str/ft_strlen.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_strlcpy.o str/ft_strlcpy.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_strlcat.o str/ft_strlcat.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_strrchr.o str/ft_strrchr.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_strncmp.o str/ft_strncmp.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_strnstr.o str/ft_strnstr.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_strtrim.o str/ft_strtrim.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_strmapi.o str/ft_strmapi.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_striteri.o str/ft_striteri.c
+ 
+gcc -Wall -Werror -Wextra   -c -o str/ft_strdup.o str/ft_strdup.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_substr.o str/ft_substr.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_strjoin.o str/ft_strjoin.c
+ 
+gcc -Wall -Werror -Wextra   -c -o str/ft_strcat.o str/ft_strcat.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_putchar_fd.o str/ft_putchar_fd.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_putstr_fd.o str/ft_putstr_fd.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_toupper.o str/ft_toupper.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_tolower.o str/ft_tolower.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_putendl_fd.o str/ft_putendl_fd.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_strchr.o str/ft_strchr.c
+gcc -Wall -Werror -Wextra   -c -o str/ft_split.o str/ft_split.c
+gcc -Wall -Werror -Wextra   -c -o mem_move/ft_memset.o mem_move/ft_memset.c
+gcc -Wall -Werror -Wextra   -c -o mem_move/ft_memmove.o mem_move/ft_memmove.c
+gcc -Wall -Werror -Wextra   -c -o mem_move/ft_memcmp.o mem_move/ft_memcmp.c
+gcc -Wall -Werror -Wextra   -c -o mem_move/ft_memcpy.o mem_move/ft_memcpy.c
+gcc -Wall -Werror -Wextra   -c -o is/ft_isalpha.o is/ft_isalpha.c
+ 
+gcc -Wall -Werror -Wextra   -c -o is/ft_isdigit.o is/ft_isdigit.c
+gcc -Wall -Werror -Wextra   -c -o is/ft_isalnum.o is/ft_isalnum.c
+gcc -Wall -Werror -Wextra   -c -o is/ft_isascii.o is/ft_isascii.c
+gcc -Wall -Werror -Wextra   -c -o is/ft_isprint.o is/ft_isprint.c
+gcc -Wall -Werror -Wextra   -c -o atoitoa/ft_atoi.o atoitoa/ft_atoi.c
+ 
+gcc -Wall -Werror -Wextra   -c -o atoitoa/ft_itoa.o atoitoa/ft_itoa.c
+echo "\x1b[94m""LA LIBFT SE COMPILE COMME UNE GRANDE...""\033[0m"
+ar -rcs libft.a math/ft_ultimate_range.o math/ft_putnbr.o math/ft_range.o math/ft_swap.o math/ft_rev_int_tab.o math/ft_nbrlen.o math/ft_putnbr_fd.o math/ft_swap.o math/ft_p_or_imp.o math/ft_array_len.o mem_alloc/ft_bzero.o mem_alloc/ft_calloc.o lst/ft_lstmap.o lst/ft_lstiter.o lst/ft_lstclear.o lst/ft_lstdelone.o lst/ft_lstadd_back.o lst/ft_lstlast.o lst/ft_lstsize.o lst/ft_lstadd_front.o lst/ft_lstnew.o str/ft_strlen.o str/ft_strlcpy.o str/ft_strlcat.o str/ft_strrchr.o str/ft_strncmp.o str/ft_strnstr.o str/ft_strtrim.o str/ft_strmapi.o str/ft_striteri.o str/ft_strdup.o str/ft_substr.o str/ft_strjoin.o str/ft_strcat.o str/ft_putchar_fd.o str/ft_putstr_fd.o str/ft_toupper.o str/ft_tolower.o str/ft_strmapi.o str/ft_striteri.o str/ft_putendl_fd.o str/ft_strchr.o str/ft_split.o mem_move/ft_memset.o mem_move/ft_memmove.o mem_move/ft_memcmp.o mem_move/ft_memcpy.o is/ft_isalpha.o is/ft_isdigit.o is/ft_isalnum.o is/ft_isascii.o is/ft_isprint.o atoitoa/ft_atoi.o atoitoa/ft_itoa.o
+echo "\x1b[94m""LIBFT READY FOR NEXT !!!""\033[0m"
+make[1]: Leaving directory '/home/dracken24/Desktop/prog/42_en_cours/cube_3d/src/libft'
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/cube3D.c -o objs/cube3D.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/utils/key_pressed.c -o objs/utils/key_pressed.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/utils/utils.c -o objs/utils/utils.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/utils/check_entry.c -o objs/utils/check_entry.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/utils/check_boarder.c -o objs/utils/check_boarder.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/get_next_line/get_next_line.c -o objs/get_next_line/get_next_line.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/get_next_line/get_next_line_utils.c -o objs/get_next_line/get_next_line_utils.o
+ 
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/kill/kill_game.c -o objs/kill/kill_game.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/init/init_imgs.c -o objs/init/init_imgs.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/init/init_var.c -o objs/init/init_var.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/draw/draw_grid.c -o objs/draw/draw_grid.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/draw/draw_env.c -o objs/draw/draw_env.o
+mkdir -p ./objs/
+mkdir -p ./objs/get_next_line
+mkdir -p ./objs/utils
+mkdir -p ./objs/kill
+mkdir -p ./objs/init
+mkdir -p ./objs/draw
+mkdir -p ./objs/ray
+gcc -Wall -Werror -Wextra -c src/ray/raycast.c -o objs/ray/raycast.o
+echo [35m"COMPILATION DE Cube_3D EN COURS...""\033[0m"
+cp minilibx/mlx-linux/libmlx.a cube3D
+gcc cube3D  ./objs/cube3D.o  ./objs/utils/key_pressed.o  ./objs/utils/utils.o  ./objs/utils/check_entry.o  ./objs/utils/check_boarder.o  ./objs/get_next_line/get_next_line.o  ./objs/get_next_line/get_next_line_utils.o  ./objs/kill/kill_game.o  ./objs/init/init_imgs.o  ./objs/init/init_var.o  ./objs/draw/draw_grid.o  ./objs/draw/draw_env.o  ./objs/ray/raycast.o minilibx/mlx-linux/libmlx.a src/libft/libft.a  -lbsd -lXext -lX11 -lm -o cube_3D
+echo [35m"CUBE READY !!!""\033[0m"
+./cube_3D maps/test_02.cub
+make: Leaving directory '/home/dracken24/Desktop/prog/42_en_cours/cube_3d'
+ 
