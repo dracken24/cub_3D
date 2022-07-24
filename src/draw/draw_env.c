@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 16:22:57 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/10 18:55:48 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/24 15:03:55 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,12 @@ void	draw_square(t_game *game, int x, int y, int color)
 			game->ct.kk = -1;
 			while (++game->ct.kk < 6)
 			{
-				mlx_pixel_put(game->mlx, game->win, x + game->ct.kk,
-							y + game->ct.ii, color);
+				if (mlx_pixel_put(game->mlx, game->win, x + game->ct.kk,
+							y + game->ct.ii, color) == 1)
+					game->test = 0;
+				else
+					mlx_pixel_put(game->mlx, game->win, x + game->ct.kk,
+								y + game->ct.ii, color);
 			}
 		}
 	}
