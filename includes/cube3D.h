@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:44:15 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/11 21:43:51 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/26 16:44:16 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,8 +111,8 @@ typedef struct s_ray {
 	float		yy;
 	float		pi;
 	float		*pos;
-	float		**ray;
-	float		**last_ray;
+	// float		**ray;
+	// float		**last_ray;
 	float		angle;
 	float		fov;
 	float		ray_len;
@@ -187,7 +187,6 @@ int 	mouse_move(int x, int y, t_game *game);
 /* RayCasting */
 void	first_ray(t_game *game, float i, float x, float y);
 void	ray_again(t_game *game, float i, float x, float y);
-void	init_ray(t_game *game);
 
 int		raycast_01(t_game *game);
 // void	start_direction(t_game *game);

@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:43:17 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/10 19:40:06 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/26 12:08:03 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,9 @@ int	main(int entry, char **name)
 
 void	init_window(t_game *game)
 {
-	// printf("INIT_WINDOW_00\n");
 	game->mlx = mlx_init();
-	// printf("INIT_WINDOW_01\n");
 	game->win = mlx_new_window(game->mlx, game->utils.whide, game->utils.height, "TRY ME");
-	// printf("INIT_WINDOW_02\n");
+
 	init_imgs(game);
 	mlx_hook(game->win, 2, 1L << 0, key_pressed, game);
 	mlx_hook(game->win, 6, 1L << 6, mouse_move, game);

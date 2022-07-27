@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 23:03:48 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/07 21:31:57 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/26 16:53:43 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ void	check_board(t_game *game)
 	if (game->ct.error == 0)
 	{
 		free(game->map);
-		free(game->ray.last_ray);
-		free(game->ray.ray);
+
 		perror("Error, Boarder not ok\n");
 		exit(0);
 	}

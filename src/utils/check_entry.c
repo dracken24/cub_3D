@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 19:49:33 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/06 20:42:12 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/26 16:53:20 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,11 @@ void	check_entry(int entry, char **name, t_game *game)
 	if (entry != 2)
 	{
 		perror("Error, Wrong arguments numbers\n");
-		free(game->ray.last_ray);
-		free(game->ray.ray);
 		exit(0);
 	}
 	if (check_name(game, name[1]) == 0)
 	{
 		perror("Error, Invalid files <name>.cub\n");
-		free(game->ray.last_ray);
-		free(game->ray.ray);
 		exit(0);
 	}
 	map_read(game, name[1]);
@@ -54,8 +50,6 @@ void	map_read(t_game *game, char *name)
 	if (!game->tmp)
 	{
 		free(game->tmp);
-		free(game->ray.last_ray);
-		free(game->ray.ray);
 		perror("Error, wrong malloc <map_0>");
 		exit(0);
 	}
@@ -91,8 +85,6 @@ void	save_map(t_game *game)
 	{
 		free(game->map);
 		free(game->tmp);
-		free(game->ray.last_ray);
-		free(game->ray.ray);
 		perror("Error, wrong malloc <map>\n");
 		exit(0);
 	}

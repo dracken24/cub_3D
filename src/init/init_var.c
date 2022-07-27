@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 20:00:53 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/24 15:32:11 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/26 16:43:51 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,19 +36,5 @@ void	init_var(t_game *game)
 	game->len.max_len_x = 0;
 	game->move_mini.x = 0;
 	game->move_mini.y = 0;
-	init_ray(game);
 	printf("INIT_VAR\n");
-}
-
-void	init_ray(t_game *game)
-{
-	game->ray.ray = ft_calloc(sizeof(float), game->ray.nbr_ray * 4);
-	game->ray.last_ray = ft_calloc(sizeof(float), game->ray.nbr_ray * 4);
-	if (!game->ray.ray || !game->ray.last_ray)
-	{
-		free(game->ray.last_ray);
-		free(game->ray.ray);
-		exit(-1);
-	}
-	// game->ray.ray[0][0] = 8.0f;
 }

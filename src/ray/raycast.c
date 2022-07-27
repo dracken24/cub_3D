@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 17:35:29 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/24 15:30:46 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/27 04:29:44 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	raycast_01(t_game *game)
 		first_ray(game, game->ct.i, ((int)game->pos_real_p1.x + (game->utils.tile_size / 2)),
 				(int)game->pos_real_p1.y - (game->utils.tile_size / 2));
 	}
-	game->ray.last_ray = game->ray.ray;
+
 	return (0);
 }
 
@@ -34,13 +34,17 @@ void	first_ray(t_game *game, float i, float x, float y)
 	game->ray.pi = game->utils.pi / 180;
 	game->ct.kk = (int)y / game->utils.tile_size;
 	game->ct.ii = (int)x / game->utils.tile_size;
-	// game->ray.ray[(int)i][0] = x;
-	// game->ray.ray[(int)i][1] = y;
+
 	ray_again(game, i, x, y + game->utils.tile_size);
 }
 
 void	ray_again(t_game *game, float i, float x, float y)
 {
+	int start_x;
+	int	start_y;
+	
+	start_x = (int)x;
+	start_y = (int)y;
 	while (game->map[game->ct.kk][game->ct.ii] != '1')
 	{
 		game->ct.kk = (int)y / game->utils.tile_size;
@@ -66,6 +70,10 @@ void	ray_again(t_game *game, float i, float x, float y)
 		game->ray.xx += cosf(game->ray.angle * game->ray.pi + i * game->ray.pi / 12) / 32 * 6;
 		game->ray.yy += sinf(game->ray.angle * game->ray.pi + i * game->ray.pi / 12) / 32 * 6;
 	}
-	// game->ray.ray[(int)i][2] = x;
-	// game->ray.ray[(int)i][3] = y;
+	// calculate_rays(start_x, (int)x, start_y, (int)y);
 }
+
+// void	calculate_rays(int start_x, int x, int start_y, int y)
+// {
+	
+// }
