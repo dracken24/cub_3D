@@ -6,7 +6,7 @@
 #    By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/19 16:09:57 by nadesjar          #+#    #+#              #
-#    Updated: 2022/07/24 15:25:54 by nadesjar         ###   ########.fr        #
+#    Updated: 2022/07/29 12:44:23 by nadesjar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,8 +62,8 @@ all: fclean all $(LIBS) $(NAME)
 
 $(NAME): $(OBJS)
 	@echo $(LILAS)"COMPILATION DE Cub_3D EN COURS..."$(RESET)
-	cp $(MLX_LIB_MAC) $(NAME)
-	gcc $(NAME) $(OBJS) $(MLX_LIB_MAC) $(LIBFT_A) $(CFLAGS) $(MLXFLAG_MAC) -o cub_3D
+	cp $(MLX_LIB_LINUX) $(NAME)
+	gcc $(NAME) $(OBJS) $(MLX_LIB_LINUX) $(LIBFT_A) $(CFLAGS) $(MLXFLAG_LINUX) -o cub_3D
 	@echo $(LILAS)"CUBE READY !!!"$(RESET)
 	@./cub_3D maps/test_02.cub
 
@@ -81,6 +81,7 @@ $(PATH_OBJS)%.o:	$(PATH_SRC)%.c
 
 make_lib:
 	$(MAKE) -C ./src/libft
+	$(MAKE) -C ./minilibx/mlx-linux
 
 push:
 	@(git add .)

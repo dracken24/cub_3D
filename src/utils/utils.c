@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 15:19:51 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/09 21:02:37 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/29 12:41:27 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	update(t_game *game)
 
 void	pos(t_game *game)
 {
-	mlx_mouse_get_pos(game->win,
+	mlx_mouse_get_pos(game->mlx, game->win,
 			(int *)&game->ray.mouse_pos.x, (int *)&game->ray.mouse_pos.y);
 	// printf("Mouse_x: %f Mouse_y: %f\n", game->ray.mouse_pos.x, game->ray.mouse_pos.y);
 }

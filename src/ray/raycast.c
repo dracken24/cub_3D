@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 17:35:29 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/27 04:29:44 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/29 12:31:17 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,11 @@ void	first_ray(t_game *game, float i, float x, float y)
 
 void	ray_again(t_game *game, float i, float x, float y)
 {
-	int start_x;
-	int	start_y;
+	// int start_x;
+	// int	start_y;
 	
-	start_x = (int)x;
-	start_y = (int)y;
+	// start_x = (int)x;
+	// start_y = (int)y;
 	while (game->map[game->ct.kk][game->ct.ii] != '1')
 	{
 		game->ct.kk = (int)y / game->utils.tile_size;

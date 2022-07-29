@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:44:15 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/26 16:44:16 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/29 12:39:55 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # include "get_next_line.h"
 # include "../src/libft/libft.h"
-// # include "../minilibx/mlx-linux/mlx.h"
-# include "../minilibx/opengl/mlx.h"
+# include "../minilibx/mlx-linux/mlx.h"
+// # include "../minilibx/opengl/mlx.h"
 # include "imgs.h"
 # include <math.h>
 

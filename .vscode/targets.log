@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 11 21:27:33 2022
+# Make data base, printed on Fri Jul 29 12:40:56 2022
 
 # Variables
 
@@ -55,7 +55,7 @@ QT_ACCESSIBILITY = 1
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/100/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/102/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # makefile (from 'Makefile', line 55)
 LIBFT_A = src/libft/libft.a
 # environment
@@ -77,7 +77,7 @@ OLDPWD = /home/dracken24
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/dracken24/.config/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+VSCODE_CODE_CACHE_PATH = /home/dracken24/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
 LANG = C
 # environment
@@ -125,7 +125,7 @@ SNAP_REEXEC =
 # environment
 ZSH = /home/dracken24/.oh-my-zsh
 # environment
-VSCODE_PID = 7547
+VSCODE_PID = 9093
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -133,7 +133,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2811,unix/Dracken24:/tmp/.ICE-unix/2811
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2781,unix/Dracken24:/tmp/.ICE-unix/2781
 # automatic
 *F = $(notdir $*)
 # environment
@@ -175,7 +175,6 @@ SNAP_COOKIE = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
 PATH = /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/dracken24/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 # default
- 
 MAKEFILES := 
 # environment
 LANGUAGE = en_CA:en
@@ -186,11 +185,11 @@ MLX_LIB_LINUX = minilibx/mlx-linux/libmlx.a
 # environment
 SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
-SNAP = /snap/code/100
+SNAP = /snap/code/102
 # environment
-INVOCATION_ID = 6eac0bfc5f874676b9264f34957e9c9a
+INVOCATION_ID = 5ce72d314a614bf9b081aa773de3ba19
 # environment
-SNAP_REVISION = 100
+SNAP_REVISION = 102
 # environment
 SNAP_REAL_HOME = /home/dracken24
 # makefile (from 'Makefile', line 13)
@@ -230,7 +229,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2835
+SYSTEMD_EXEC_PID = 2804
 # makefile (from 'Makefile', line 18)
 LIGHT_CYAN = $(shell tput -Txterm setaf 6)
 # environment
@@ -246,23 +245,23 @@ MAKE_VERSION := 4.3
 # environment
 DISABLE_WAYLAND = 1
 # environment
-SNAP_DATA = /var/snap/code/100
+SNAP_DATA = /var/snap/code/102
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2084
+MANAGERPID = 2137
 # makefile (from 'Makefile', line 28)
 PATH_MOVE = ./src/move/
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 7496
+GIO_LAUNCHED_DESKTOP_FILE_PID = 9049
 # environment
 PAGER = less
 # makefile (from 'Makefile', line 17)
 LILAS = $(shell tput -Txterm setaf 5)
 # environment
-_ = /snap/code/100/usr/share/code/code
+_ = /snap/code/102/usr/share/code/code
 # makefile (from 'Makefile', line 20)
 RESET = "\033[0m"
 # environment
@@ -274,9 +273,10 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:39164
+JOURNAL_STREAM = 8:38419
 # environment
 XDG_SESSION_CLASS = user
+ 
 # makefile (from 'Makefile', line 15)
 LIGHT_BROWN = $(shell tput -Txterm setaf 3)
 # environment
@@ -290,17 +290,17 @@ REMOVE = cub_3D
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-fa98f921-1.69.0-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-fa98f921-1.69.2-main.sock
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/100/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/102/usr/share/glib-2.0/schemas
 # default
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = 92d25e35
+SNAP_VERSION = 3b889b09
 # default
 SUFFIXES := 
 # environment
@@ -314,7 +314,7 @@ SNAP_COMMON = /var/snap/code/common
 # makefile (from 'Makefile', line 46)
 CC = gcc
 # environment
-SNAP_USER_DATA = /home/dracken24/snap/code/100
+SNAP_USER_DATA = /home/dracken24/snap/code/102
 # environment
 XDG_MENU_PREFIX = gnome-
 # makefile (from 'Makefile', line 19)
@@ -332,10 +332,10 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# src (device 66308, inode 2580531): No files, no impossibilities so far.
-# . (device 66308, inode 2539981): 14 files, no impossibilities.
+# src (device 66308, inode 2589368): No files, no impossibilities so far.
+# . (device 66308, inode 2540081): 15 files, no impossibilities.
 
-# 14 files, no impossibilities in 2 directories.
+# 15 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -364,7 +364,7 @@ objs/utils/utils.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-10 19:26:45.993085651
+#  Last modified 2022-07-29 12:39:45.255015264
 #  File has been updated.
 #  Successfully updated.
 
@@ -572,12 +572,13 @@ make_lib:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 44 / storage = 606 B / avg = 13 B
-# current buf: size = 8162 B / used = 606 B / count = 44 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 45 / storage = 611 B / avg = 13 B
+# current buf: size = 8162 B / used = 611 B / count = 45 / avg = 13 B
 
-# strcache performance: lookups = 72 / hit rate = 38%
+# strcache performance: lookups = 73 / hit rate = 38%
 # hash-table stats:
-# Load=44/8192=1%, Rehash=0, Collisions=0/72=0%
-# Finished Make data base on Mon Jul 11 21:27:33 2022
+ 
+# Load=45/8192=1%, Rehash=0, Collisions=0/73=0%
+# Finished Make data base on Fri Jul 29 12:40:56 2022
 
  
