@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:44:15 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/29 12:39:55 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/30 18:48:10 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ typedef enum s_keyboard {
 	KEY_S_LINUX = 115,
 	KEY_W_LINUX = 119,
 	KEY_E_LINUX = 101,
-	KEY_SHIFT_LINUX = 114,
+	KEY_R_LINUX = 114,
 	KEY_M_L_LINUX = 1,
 	KEY_M_R_LINUX = 3,
 	KEY_SPACE_LINUX = 32,
@@ -174,7 +174,7 @@ int		x_quit(t_game *game);
 
 /* Control */
 void	draw_cursor(t_game *game);
-void	key_shift(t_game *game);
+void	key_r(t_game *game);
 void	key_w(t_game *game);
 void	key_a(t_game *game);
 void	key_s(t_game *game);

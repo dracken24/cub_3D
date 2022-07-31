@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 12:29:24 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/11 21:30:07 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/30 18:47:58 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ int	key_pressed(int key, t_game *game)
 {
 	if (key == KEY_ESC_LINUX || key == KEY_ESC_MAC)
 		kill_game(game, "Why did you kill me !#*@**#?");	
-	else if (key == KEY_SHIFT_LINUX)
-		key_shift(game);
+	else if (key == KEY_R_LINUX)
+		key_r(game);
 	else if (key == KEY_W_LINUX || key == KEY_W_MAC)
 		key_w(game);
 	else if (key == KEY_D_LINUX || key == KEY_D_MAC)
@@ -33,7 +33,7 @@ int	key_pressed(int key, t_game *game)
 	return (0);
 }
 
-void	key_shift(t_game *game)
+void	key_r(t_game *game)
 {
 	float	x;
 	float	y;

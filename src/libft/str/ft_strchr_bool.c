@@ -1,23 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_p_or_imp.c                                      :+:      :+:    :+:   */
+/*   ft_strchr_bool.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/20 13:40:23 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/29 22:07:48 by nadesjar         ###   ########.fr       */
+/*   Created: 2022/07/28 16:13:40 by nadesjar          #+#    #+#             */
+/*   Updated: 2022/07/28 16:16:59 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int ft_p_or_imp(int nbr)
+bool	ft_strchr_bool(const char *str, int c)
 {
-    if (nbr % 10 == 0 || nbr % 10 == 2 || nbr % 10 == 4
-            || nbr % 10 == 6 || nbr % 10 == 8)
-        return (true);
-    else
-        return (false);
-    return (false);
+	size_t	len;
+
+	len = ft_strlen((char *)str);
+	if (c == '\0')
+	{
+		while (len > 0)
+		{
+			str++;
+			len--;
+		}
+		return (false);
+	}
+	while (*str)
+	{
+		if (*str == (char)c)
+			return (true);
+		str++;
+	}
+	return (false);
 }

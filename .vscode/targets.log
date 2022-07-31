@@ -6,7 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 29 12:40:56 2022
+# Make data base, printed on Sat Jul 30 18:46:00 2022
+ 
 
 # Variables
 
@@ -125,7 +126,7 @@ SNAP_REEXEC =
 # environment
 ZSH = /home/dracken24/.oh-my-zsh
 # environment
-VSCODE_PID = 9093
+VSCODE_PID = 4944
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -133,7 +134,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2781,unix/Dracken24:/tmp/.ICE-unix/2781
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2744,unix/Dracken24:/tmp/.ICE-unix/2744
 # automatic
 *F = $(notdir $*)
 # environment
@@ -187,7 +188,7 @@ SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
 SNAP = /snap/code/102
 # environment
-INVOCATION_ID = 5ce72d314a614bf9b081aa773de3ba19
+INVOCATION_ID = 89b26ea9eb814488836cff7571674edd
 # environment
 SNAP_REVISION = 102
 # environment
@@ -229,7 +230,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2804
+SYSTEMD_EXEC_PID = 2765
 # makefile (from 'Makefile', line 18)
 LIGHT_CYAN = $(shell tput -Txterm setaf 6)
 # environment
@@ -249,13 +250,13 @@ SNAP_DATA = /var/snap/code/102
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2137
+MANAGERPID = 2094
 # makefile (from 'Makefile', line 28)
 PATH_MOVE = ./src/move/
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 9049
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4896
 # environment
 PAGER = less
 # makefile (from 'Makefile', line 17)
@@ -273,10 +274,9 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:38419
+JOURNAL_STREAM = 8:30340
 # environment
 XDG_SESSION_CLASS = user
- 
 # makefile (from 'Makefile', line 15)
 LIGHT_BROWN = $(shell tput -Txterm setaf 3)
 # environment
@@ -311,6 +311,7 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 SNAP_COMMON = /var/snap/code/common
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+ 
 # makefile (from 'Makefile', line 46)
 CC = gcc
 # environment
@@ -333,9 +334,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Directories
 
 # src (device 66308, inode 2589368): No files, no impossibilities so far.
-# . (device 66308, inode 2540081): 15 files, no impossibilities.
+# . (device 66308, inode 2540081): 17 files, no impossibilities.
 
-# 15 files, no impossibilities in 2 directories.
+# 17 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -350,7 +351,8 @@ objs/%.o: src/%.c
 	@mkdir -p $(PATH_OBJS)move
 	@mkdir -p $(PATH_OBJS)ray
 	@mkdir -p $(PATH_OBJS)libft
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@printf "$(LIGHT_GREEN)■"
 
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
@@ -364,7 +366,7 @@ objs/utils/utils.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-29 12:39:45.255015264
+#  Last modified 2022-07-30 18:45:28.456126661
 #  File has been updated.
 #  Successfully updated.
 
@@ -407,7 +409,7 @@ clean:
 # | := 
 # variable set hash-table stats:
 # Load=9/32=28%, Rehash=0, Collisions=3/21=14%
-#  recipe to execute (from 'Makefile', line 91):
+#  recipe to execute (from 'Makefile', line 93):
 	@rm -f $(OBJ) $(REMOVE)
 	@rm -fr ./objs ./minilibx/mlx-linux/obj/ ./minilibx/opengl/obj/
 	@$(MAKE) fclean -C ./src/libft
@@ -442,7 +444,7 @@ push:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 86):
+#  recipe to execute (from 'Makefile', line 88):
 	@(git add .)
 	@(git commit -m "nadesjar42")
 	@(git push)
@@ -501,7 +503,7 @@ fclean: clean
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/12=0%
-#  recipe to execute (from 'Makefile', line 97):
+#  recipe to execute (from 'Makefile', line 99):
 	@rm -f $(NAME) $(LIBFT_A)
 
 # Not a target:
@@ -540,18 +542,20 @@ cub3D: objs/cube3D.o objs/utils/utils.o objs/utils/check_entry.o objs/utils/chec
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 64):
 	@echo $(LILAS)"COMPILATION DE Cub_3D EN COURS..."$(RESET)
-	cp $(MLX_LIB_LINUX) $(NAME)
-	gcc $(NAME) $(OBJS) $(MLX_LIB_LINUX) $(LIBFT_A) $(CFLAGS) $(MLXFLAG_LINUX) -o cub_3D
+	@cp $(MLX_LIB_LINUX) $(NAME)
+	@gcc $(NAME) $(OBJS) $(MLX_LIB_LINUX) $(LIBFT_A) $(CFLAGS) $(MLXFLAG_LINUX) -o cub_3D
 	@echo $(LILAS)"CUBE READY !!!"$(RESET)
 	@./cub_3D maps/test_02.cub
 
+ 
 make_lib:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 83):
-	$(MAKE) -C ./src/libft
+#  recipe to execute (from 'Makefile', line 84):
+	@$(MAKE) -C ./src/libft
+	@$(MAKE) -C ./minilibx/mlx-linux
 
 # Not a target:
 .SUFFIXES:
@@ -572,13 +576,12 @@ make_lib:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 45 / storage = 611 B / avg = 13 B
-# current buf: size = 8162 B / used = 611 B / count = 45 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 46 / storage = 618 B / avg = 13 B
+# current buf: size = 8162 B / used = 618 B / count = 46 / avg = 13 B
 
-# strcache performance: lookups = 73 / hit rate = 38%
+# strcache performance: lookups = 75 / hit rate = 38%
 # hash-table stats:
- 
-# Load=45/8192=1%, Rehash=0, Collisions=0/73=0%
-# Finished Make data base on Fri Jul 29 12:40:56 2022
+# Load=46/8192=1%, Rehash=0, Collisions=0/75=0%
+# Finished Make data base on Sat Jul 30 18:46:00 2022
 
  

@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 17:35:29 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/29 12:31:17 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/30 20:02:15 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,23 +32,24 @@ void	first_ray(t_game *game, float i, float x, float y)
 	game->ray.xx = game->pos_p1_min_map.x;
 	game->ray.yy = game->pos_p1_min_map.y;
 	game->ray.pi = game->utils.pi / 180;
-	game->ct.kk = (int)y / game->utils.tile_size;
-	game->ct.ii = (int)x / game->utils.tile_size;
+	game->ct.kk = (int)y;
+	game->ct.ii = (int)x;
 
 	ray_again(game, i, x, y + game->utils.tile_size);
 }
 
 void	ray_again(t_game *game, float i, float x, float y)
 {
-	// int start_x;
-	// int	start_y;
+	// int g;
+	// int h;
+	// int ct = -1;
 	
-	// start_x = (int)x;
-	// start_y = (int)y;
-	while (game->map[game->ct.kk][game->ct.ii] != '1')
+	// g = 0;
+	// h = 0;
+	while (game->map[game->ct.kk / 32][game->ct.ii / 32] != '1')
 	{
-		game->ct.kk = (int)y / game->utils.tile_size;
-		game->ct.ii = (int)x / game->utils.tile_size;
+		game->ct.kk = (int)y;
+		game->ct.ii = (int)x;
 		// if (game->map[game->ct.kk][game->ct.ii] == '1')
 		// 	break;
 		if (((int)x % game->utils.tile_size == 0
@@ -67,8 +68,11 @@ void	ray_again(t_game *game, float i, float x, float y)
 		}
 		x += cosf(game->ray.angle * game->ray.pi + i * game->ray.pi / 12);
 		y += sinf(game->ray.angle * game->ray.pi + i * game->ray.pi / 12);
-		game->ray.xx += cosf(game->ray.angle * game->ray.pi + i * game->ray.pi / 12) / 32 * 6;
-		game->ray.yy += sinf(game->ray.angle * game->ray.pi + i * game->ray.pi / 12) / 32 * 6;
+		game->ray.xx += (cosf(game->ray.angle * game->ray.pi + i * game->ray.pi / 12) / 32 * 6);
+		game->ray.yy += (sinf(game->ray.angle * game->ray.pi + i * game->ray.pi / 12) / 32 * 6);
+		// g += 32;
+		// h++;
+		// printf("CT: %d\n", ++ct);
 	}
 	// calculate_rays(start_x, (int)x, start_y, (int)y);
 }
