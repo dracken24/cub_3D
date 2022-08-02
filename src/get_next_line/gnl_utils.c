@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   gnl_utils.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 14:13:48 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/22 13:07:27 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/31 22:26:15 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/get_next_line.h"
+#include "gnl.h"
 
-size_t	ft_strlenn(char *str)
+size_t	ft_slen(char *str)
 {
 	size_t	i;
 
@@ -32,7 +32,7 @@ char	*ft_strchrr(char *str, int c)
 	if (!str)
 		return (0);
 	if (c == '\0')
-		return ((char *)&str[ft_strlenn(str)]);
+		return ((char *)&str[ft_slen(str)]);
 	while (str[i] != '\0')
 	{
 		if (str[i] == (char) c)
@@ -55,7 +55,7 @@ char	*ft_strjoinn(char *save_str, char *buff)
 	}
 	if (!save_str || !buff)
 		return (NULL);
-	str = malloc(sizeof(char) * ((ft_strlenn(save_str) + ft_strlenn(buff)) + 1));
+	str = malloc(sizeof(char) * ((ft_slen(save_str) + ft_slen(buff)) + 1));
 	if (str == NULL)
 		return (NULL);
 	i = -1;
@@ -112,7 +112,7 @@ char	*ft_get_nline(char *save_str)
 		free (save_str);
 		return (NULL);
 	}
-	str = malloc(sizeof(char) * (ft_strlenn(save_str) - i + 1));
+	str = malloc(sizeof(char) * (ft_slen(save_str) - i + 1));
 	if (!str)
 		return (NULL);
 	i++;

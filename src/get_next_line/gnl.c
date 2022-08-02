@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   gnl.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 14:14:14 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/06/22 13:07:03 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/31 22:26:07 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/get_next_line.h"
+#include "gnl.h"
 #include <limits.h>
 
 char	*ft_read_fd(int fd, char *save_str)

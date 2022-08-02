@@ -6,7 +6,7 @@
 #    By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/19 16:09:57 by nadesjar          #+#    #+#              #
-#    Updated: 2022/07/30 18:45:28 by nadesjar         ###   ########.fr        #
+#    Updated: 2022/08/01 23:59:04 by nadesjar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,11 +28,11 @@ PATH_INIT		= ./src/init/
 PATH_MOVE		= ./src/move/
 PATH_DRAW		= ./src/draw/
 PATH_RAY		= ./src/ray/
+PATH_GNL		= ./src/get_next_line/
 
 FILES 			= $(PATH_SRC)cube3D.c \
 				$(PATH_UTILS)utils.c \
 				$(PATH_UTILS)check_entry.c $(PATH_UTILS)check_boarder.c \
-				$(PATH_GNL)get_next_line.c $(PATH_GNL)get_next_line_utils.c \
 				$(PATH_KILL)kill_game.c \
 				$(PATH_INIT)init_imgs.c $(PATH_INIT)init_var.c \
 				$(PATH_DRAW)draw_grid.c $(PATH_DRAW)draw_env.c \
@@ -40,6 +40,7 @@ FILES 			= $(PATH_SRC)cube3D.c \
 				$(PATH_MOVE)key_pressed.c $(PATH_MOVE)mouse.c \
 				$(PATH_MOVE)key_press_suite.c \
 				$(PATH_RAY)raycast.c \
+				$(PATH_GNL)gnl.c $(PATH_GNL)gnl_utils.c \
 
 OBJS 			= $(patsubst $(PATH_SRC)%.c, $(PATH_OBJS)%.o, $(FILES))
 
@@ -58,7 +59,7 @@ NAME 			= cub3D
 
 REMOVE			= cub_3D \
 
-all: fclean all $(LIBS) $(NAME)
+all: all $(LIBS) $(NAME)
 
 $(NAME): $(OBJS)
 	@echo $(LILAS)"COMPILATION DE Cub_3D EN COURS..."$(RESET)
@@ -77,6 +78,7 @@ $(PATH_OBJS)%.o:	$(PATH_SRC)%.c
 	@mkdir -p $(PATH_OBJS)move
 	@mkdir -p $(PATH_OBJS)ray
 	@mkdir -p $(PATH_OBJS)libft
+	@mkdir -p $(PATH_OBJS)get_next_line
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@printf "$(LIGHT_GREEN)■"
 

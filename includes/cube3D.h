@@ -6,14 +6,14 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 11:44:15 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/30 18:48:10 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/08/01 23:58:07 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CUBE3D_H
 # define CUBE3D_H
 
-# include "get_next_line.h"
+# include "../src/get_next_line/gnl.h"
 # include "../src/libft/libft.h"
 # include "../minilibx/mlx-linux/mlx.h"
 // # include "../minilibx/opengl/mlx.h"

@@ -1,4 +1,8 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: Circular all <- all dependency dropped.
+
+# make[1]: Entering directory '/home/dracken24/Desktop/prog/42_en_cours/cub_3D/src/libft'
+ 
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,8 +10,797 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jul 30 18:46:00 2022
+# Make data base, printed on Mon Aug  1 23:59:13 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+HOMEBREW_PREFIX = /home/linuxbrew/.linuxbrew
+# makefile (from 'Makefile', line 24)
+MEM_A = ./mem_alloc/
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+# environment
+QT_X11_NO_MITSHM = 1
+# environment
+VSCODE_CWD = /home/dracken24
+# environment
+WINDOWPATH = 2
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 29)
+ATOI = ./atoitoa/
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/102/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/dracken24/Desktop/prog/42_en_cours/cub_3D
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'Makefile', line 26)
+STR = ./str/
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+OLDPWD = /home/dracken24
+# makefile (from 'Makefile', line 28)
+IS = ./is/
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# makefile (from 'Makefile', line 23)
+MATH = ./math/
+# environment
+VSCODE_CODE_CACHE_PATH = /home/dracken24/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# makefile (from 'Makefile', line 22)
+P_OBJS = ./objs/
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# environment
+HOMEBREW_REPOSITORY = /home/linuxbrew/.linuxbrew/Homebrew
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile (from 'Makefile', line 16)
+CYAN = $(shell tput -Txterm setaf 4)
+# makefile
+MAKEFLAGS = pqrRw
+# makefile
+CURDIR := /home/dracken24/Desktop/prog/42_en_cours/cub_3D/src/libft
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrRw
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 14)
+LIGHT_GREEN = $(shell tput -Txterm setaf 2)
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+ZSH = /home/dracken24/.oh-my-zsh
+# environment
+VSCODE_PID = 4232
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2820,unix/Dracken24:/tmp/.ICE-unix/2820
+# automatic
+*F = $(notdir $*)
+# environment
+MANPATH = /home/linuxbrew/.linuxbrew/share/man:
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 51)
+OBJS = $(patsubst %.c, $(P_OBJS)%.o, $(FILES))
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# environment
+INFOPATH = /home/linuxbrew/.linuxbrew/share/info:
+# makefile
+SHELL = /bin/sh
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 1
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SNAP_COOKIE = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
+# environment
+PATH = /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/dracken24/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = en_CA:en
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/dracken24/snap/code/common
+# environment
+SNAP = /snap/code/102
+# environment
+INVOCATION_ID = 18cda96a58624f2d83fa8b162c00d3f8
+# environment
+SNAP_REVISION = 102
+# environment
+SNAP_REAL_HOME = /home/dracken24
+# makefile (from 'Makefile', line 13)
+LIGHT_RED = $(shell tput -Txterm setaf 1)
+# environment
+USERNAME = dracken24
+# makefile (from 'Makefile', line 31)
+FILES = $(MATH)ft_ultimate_range.c $(MATH)ft_putnbr.c $(MATH)ft_range.c $(MATH)ft_swap.c $(MATH)ft_rev_int_tab.c $(MATH)ft_nbrlen.c $(MATH)ft_putnbr_fd.c $(MATH)ft_swap.c $(MATH)ft_p_or_imp.c $(MATH)ft_array_len.c $(MEM_A)ft_bzero.c $(MEM_A)ft_calloc.c $(MEM_A)free_ptr.c $(LST)ft_lstmap.c $(LST)ft_lstiter.c $(LST)ft_lstclear.c $(LST)ft_lstdelone.c $(LST)ft_lstadd_back.c $(LST)ft_lstlast.c $(LST)ft_lstsize.c $(LST)ft_lstadd_front.c $(LST)ft_lstnew.c $(STR)ft_strlen.c $(STR)ft_strlcpy.c $(STR)ft_strlcat.c $(STR)ft_strrchr.c $(STR)ft_strncmp.c  $(STR)ft_strnstr.c $(STR)ft_strtrim.c $(STR)ft_strmapi.c $(STR)ft_striteri.c $(STR)ft_strdup.c $(STR)ft_substr.c $(STR)ft_strjoin.c $(STR)ft_strcat.c $(STR)ft_putchar_fd.c $(STR)ft_putstr_fd.c $(STR)ft_toupper.c $(STR)ft_tolower.c $(STR)ft_strmapi.c $(STR)ft_striteri.c $(STR)ft_putendl_fd.c $(STR)ft_strchr.c $(STR)ft_split.c $(STR)ft_strchr_bool.c $(MEM_M)ft_memset.c $(MEM_M)ft_memmove.c $(MEM_M)ft_memcmp.c $(MEM_M)ft_memcpy.c $(IS)ft_isalpha.c $(IS)ft_isdigit.c $(IS)ft_isalnum.c $(IS)ft_isascii.c $(IS)ft_isprint.c $(ATOI)ft_atoi.c $(ATOI)ft_itoa.c $(ATOI)ft_atoi_base.c 
+# automatic
+?F = $(notdir $?)
+# makefile (from 'Makefile', line 58)
+NAME = libft.a
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = dracken24
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 2844
+# makefile (from 'Makefile', line 18)
+LIGHT_CYAN = $(shell tput -Txterm setaf 6)
+# environment
+DISPLAY = :1
+# environment
+USER = dracken24
+# environment
+GTK_MODULES = gail:atk-bridge
+# makefile (from 'Makefile', line 27)
+MEM_M = ./mem_move/
+# environment
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+# default
+MAKE_VERSION := 4.3
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/102
+# environment
+SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
+# environment
+MANAGERPID = 2161
+# environment
+HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4172
+# environment
+PAGER = less
+# makefile (from 'Makefile', line 17)
+LILAS = $(shell tput -Txterm setaf 5)
+# environment
+_ = /snap/code/102/usr/share/code/code
+# makefile (from 'Makefile', line 20)
+RESET = "\033[0m"
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 56)
+CFLAGS = -Wall -Werror -Wextra
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:23328
+# environment
+XDG_SESSION_CLASS = user
+# makefile (from 'Makefile', line 15)
+LIGHT_BROWN = $(shell tput -Txterm setaf 3)
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/dracken24
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-fa98f921-1.69.2-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/102/usr/share/glib-2.0/schemas
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 25)
+LST = ./lst/
+# environment
+SNAP_VERSION = 3b889b09
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 54)
+CC = gcc
+# environment
+SNAP_USER_DATA = /home/dracken24/snap/code/102
+# environment
+XDG_MENU_PREFIX = gnome-
+# makefile (from 'Makefile', line 19)
+WHITE = $(shell tput -Txterm setaf 7)
+# environment
+GDMSESSION = ubuntu
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=147/1024=14%, Rehash=0, Collisions=47/250=19%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 66308, inode 2671061): 14 files, no impossibilities.
+
+# 14 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+objs/%.o: %.c
+#  recipe to execute (from 'Makefile', line 66):
+	@mkdir -p $(P_OBJS)
+	@mkdir -p $(P_OBJS)math
+	@mkdir -p $(P_OBJS)mem_alloc
+	@mkdir -p $(P_OBJS)lst
+	@mkdir -p $(P_OBJS)str
+	@mkdir -p $(P_OBJS)mem_move
+	@mkdir -p $(P_OBJS)is
+	@mkdir -p $(P_OBJS)atoitoa
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@printf "$(LIGHT_GREEN)■"
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+objs/./math/ft_nbrlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
  
+objs/./str/ft_strlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strchr_bool.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strncmp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libft.a: msg_in objs/./math/ft_ultimate_range.o objs/./math/ft_putnbr.o objs/./math/ft_range.o objs/./math/ft_swap.o objs/./math/ft_rev_int_tab.o objs/./math/ft_nbrlen.o objs/./math/ft_putnbr_fd.o objs/./math/ft_swap.o objs/./math/ft_p_or_imp.o objs/./math/ft_array_len.o objs/./mem_alloc/ft_bzero.o objs/./mem_alloc/ft_calloc.o objs/./mem_alloc/free_ptr.o objs/./lst/ft_lstmap.o objs/./lst/ft_lstiter.o objs/./lst/ft_lstclear.o objs/./lst/ft_lstdelone.o objs/./lst/ft_lstadd_back.o objs/./lst/ft_lstlast.o objs/./lst/ft_lstsize.o objs/./lst/ft_lstadd_front.o objs/./lst/ft_lstnew.o objs/./str/ft_strlen.o objs/./str/ft_strlcpy.o objs/./str/ft_strlcat.o objs/./str/ft_strrchr.o objs/./str/ft_strncmp.o objs/./str/ft_strnstr.o objs/./str/ft_strtrim.o objs/./str/ft_strmapi.o objs/./str/ft_striteri.o objs/./str/ft_strdup.o objs/./str/ft_substr.o objs/./str/ft_strjoin.o objs/./str/ft_strcat.o objs/./str/ft_putchar_fd.o objs/./str/ft_putstr_fd.o objs/./str/ft_toupper.o objs/./str/ft_tolower.o objs/./str/ft_strmapi.o objs/./str/ft_striteri.o objs/./str/ft_putendl_fd.o objs/./str/ft_strchr.o objs/./str/ft_split.o objs/./str/ft_strchr_bool.o objs/./mem_move/ft_memset.o objs/./mem_move/ft_memmove.o objs/./mem_move/ft_memcmp.o objs/./mem_move/ft_memcpy.o objs/./is/ft_isalpha.o objs/./is/ft_isdigit.o objs/./is/ft_isalnum.o objs/./is/ft_isascii.o objs/./is/ft_isprint.o objs/./atoitoa/ft_atoi.o objs/./atoitoa/ft_itoa.o objs/./atoitoa/ft_atoi_base.o msg_out
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-01 23:59:08.145856092
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+#  recipe to execute (from 'Makefile', line 63):
+	@ar -rcs $(NAME) $(OBJS)
+
+# Not a target:
+objs/./mem_move/ft_memcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strnstr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_putstr_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./atoitoa/ft_itoa.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_toupper.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strlcat.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_split.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strdup.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./mem_move/ft_memcmp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./mem_alloc/ft_bzero.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-30 18:41:49.337900592
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+objs/./mem_alloc/ft_calloc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./mem_move/ft_memset.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./mem_alloc/free_ptr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+msg_out:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 81):
+	@echo '\n'$(LIGHT_GREEN)"LIBFT READY FOR NEXT !!!"$(RESET)
+
+# Not a target:
+objs/./math/ft_putnbr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./lst/ft_lstclear.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_substr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 89):
+	@rm -f $(OBJ)
+	@rm -fr ./objs
+
+# Not a target:
+objs/./lst/ft_lstlast.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./math/ft_swap.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./lst/ft_lstadd_back.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strrchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./lst/ft_lstdelone.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./math/ft_p_or_imp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./is/ft_isalnum.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./math/ft_array_len.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strjoin.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./mem_move/ft_memmove.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./lst/ft_lstmap.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+objs/./is/ft_isalpha.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_tolower.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strcat.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./is/ft_isprint.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: libft.a
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 93):
+	@rm -f $(NAME)
+
+gitp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 84):
+	@(git add .)
+	@(git commit -m "nadesjar42")
+	@(git push)
+
+# Not a target:
+objs/./str/ft_strlcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./math/ft_putnbr_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./lst/ft_lstnew.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strtrim.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./lst/ft_lstadd_front.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./lst/ft_lstiter.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_putchar_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_putendl_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./math/ft_ultimate_range.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./math/ft_range.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./is/ft_isdigit.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./is/ft_isascii.o:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_strmapi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all clean fclean re
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./str/ft_striteri.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# 'override' directive
+msg_in: .SHELLSTATUS := 0
+msg_in:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := msg_in
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=9/32=28%, Rehash=0, Collisions=4/17=24%
+#  recipe to execute (from 'Makefile', line 78):
+	@echo $(LILAS)"LA LIBFT SE COMPILE COMME UNE GRANDE..."$(RESET)
+
+# Not a target:
+objs/./lst/ft_lstsize.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./atoitoa/ft_atoi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./math/ft_rev_int_tab.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/./atoitoa/ft_atoi_base.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=66/1024=6%, Rehash=0, Collisions=8/148=5%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 83 / storage = 1570 B / avg = 18 B
+# current buf: size = 8162 B / used = 1570 B / count = 83 / avg = 18 B
+
+# strcache performance: lookups = 110 / hit rate = 24%
+# hash-table stats:
+# Load=83/8192=1%, Rehash=0, Collisions=1/110=1%
+# Finished Make data base on Mon Aug  1 23:59:13 2022
+
+# make[1]: Leaving directory '/home/dracken24/Desktop/prog/42_en_cours/cub_3D/src/libft'
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Aug  1 23:59:13 2022
 
 # Variables
 
@@ -21,7 +814,7 @@ LC_ALL = C
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
 SSH_AGENT_LAUNCHER = gnome-keyring
-# makefile (from 'Makefile', line 54)
+# makefile (from 'Makefile', line 55)
 MLX_LIB_MAC = minilibx/opengl/libmlx.a
 # environment
 SNAP_INSTANCE_KEY = 
@@ -31,7 +824,7 @@ PATH_DRAW = ./src/draw/
 HOMEBREW_PREFIX = /home/linuxbrew/.linuxbrew
 # environment
 GJS_DEBUG_OUTPUT = stderr
-# makefile (from 'Makefile', line 24)
+# makefile (from 'Makefile', line 31)
 PATH_GNL = ./src/get_next_line/
 # environment
 MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
@@ -43,7 +836,7 @@ PATH_KILL = ./src/kill/
 VSCODE_CWD = /home/dracken24
 # environment
 WINDOWPATH = 2
-# makefile (from 'Makefile', line 52)
+# makefile (from 'Makefile', line 53)
 LIBS = make_lib
 # makefile (from 'Makefile', line 25)
 PATH_UTILS = ./src/utils/
@@ -57,7 +850,7 @@ QT_ACCESSIBILITY = 1
 SNAP_INSTANCE_NAME = code
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/102/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
-# makefile (from 'Makefile', line 55)
+# makefile (from 'Makefile', line 56)
 LIBFT_A = src/libft/libft.a
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
@@ -126,7 +919,7 @@ SNAP_REEXEC =
 # environment
 ZSH = /home/dracken24/.oh-my-zsh
 # environment
-VSCODE_PID = 4944
+VSCODE_PID = 4232
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -134,7 +927,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2744,unix/Dracken24:/tmp/.ICE-unix/2744
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2820,unix/Dracken24:/tmp/.ICE-unix/2820
 # automatic
 *F = $(notdir $*)
 # environment
@@ -151,7 +944,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupp
 PATH_INIT = ./src/init/
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
-# makefile (from 'Makefile', line 44)
+# makefile (from 'Makefile', line 45)
 OBJS = $(patsubst $(PATH_SRC)%.c, $(PATH_OBJS)%.o, $(FILES))
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
@@ -181,14 +974,14 @@ MAKEFILES :=
 LANGUAGE = en_CA:en
 # automatic
 ^F = $(notdir $^)
-# makefile (from 'Makefile', line 53)
+# makefile (from 'Makefile', line 54)
 MLX_LIB_LINUX = minilibx/mlx-linux/libmlx.a
 # environment
 SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
 SNAP = /snap/code/102
 # environment
-INVOCATION_ID = 89b26ea9eb814488836cff7571674edd
+INVOCATION_ID = 18cda96a58624f2d83fa8b162c00d3f8
 # environment
 SNAP_REVISION = 102
 # environment
@@ -197,13 +990,14 @@ SNAP_REAL_HOME = /home/dracken24
 LIGHT_RED = $(shell tput -Txterm setaf 1)
 # environment
 USERNAME = dracken24
-# makefile (from 'Makefile', line 32)
-FILES = $(PATH_SRC)cube3D.c $(PATH_UTILS)utils.c $(PATH_UTILS)check_entry.c $(PATH_UTILS)check_boarder.c $(PATH_GNL)get_next_line.c $(PATH_GNL)get_next_line_utils.c $(PATH_KILL)kill_game.c $(PATH_INIT)init_imgs.c $(PATH_INIT)init_var.c $(PATH_DRAW)draw_grid.c $(PATH_DRAW)draw_env.c $(PATH_DRAW)draw_raycast.c $(PATH_MOVE)key_pressed.c $(PATH_MOVE)mouse.c $(PATH_MOVE)key_press_suite.c $(PATH_RAY)raycast.c 
+# makefile (from 'Makefile', line 33)
+ 
+FILES = $(PATH_SRC)cube3D.c $(PATH_UTILS)utils.c $(PATH_UTILS)check_entry.c $(PATH_UTILS)check_boarder.c $(PATH_KILL)kill_game.c $(PATH_INIT)init_imgs.c $(PATH_INIT)init_var.c $(PATH_DRAW)draw_grid.c $(PATH_DRAW)draw_env.c $(PATH_DRAW)draw_raycast.c $(PATH_MOVE)key_pressed.c $(PATH_MOVE)mouse.c $(PATH_MOVE)key_press_suite.c $(PATH_RAY)raycast.c $(PATH_GNL)gnl.c $(PATH_GNL)gnl_utils.c 
 # automatic
 ?F = $(notdir $?)
-# makefile (from 'Makefile', line 50)
+# makefile (from 'Makefile', line 51)
 MLXFLAG_LINUX = -lbsd -lXext -lX11 -lm
-# makefile (from 'Makefile', line 57)
+# makefile (from 'Makefile', line 58)
 NAME = cub3D
 # environment
 XDG_CURRENT_DESKTOP = Unity
@@ -219,7 +1013,7 @@ DESKTOP_SESSION = ubuntu
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # 'override' directive
 GNUMAKEFLAGS := 
-# makefile (from 'Makefile', line 49)
+# makefile (from 'Makefile', line 50)
 MLXFLAG_MAC = -framework OpenGl -framework Cocoa
 # environment
 LOGNAME = dracken24
@@ -230,7 +1024,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2765
+SYSTEMD_EXEC_PID = 2844
 # makefile (from 'Makefile', line 18)
 LIGHT_CYAN = $(shell tput -Txterm setaf 6)
 # environment
@@ -250,13 +1044,13 @@ SNAP_DATA = /var/snap/code/102
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2094
+MANAGERPID = 2161
 # makefile (from 'Makefile', line 28)
 PATH_MOVE = ./src/move/
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4896
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4172
 # environment
 PAGER = less
 # makefile (from 'Makefile', line 17)
@@ -267,14 +1061,14 @@ _ = /snap/code/102/usr/share/code/code
 RESET = "\033[0m"
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
-# makefile (from 'Makefile', line 48)
+# makefile (from 'Makefile', line 49)
 CFLAGS = -Wall -Werror -Wextra
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:30340
+JOURNAL_STREAM = 8:23328
 # environment
 XDG_SESSION_CLASS = user
 # makefile (from 'Makefile', line 15)
@@ -285,7 +1079,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 HOME = /home/dracken24
 # environment
 QT_IM_MODULE = ibus
-# makefile (from 'Makefile', line 59)
+# makefile (from 'Makefile', line 60)
 REMOVE = cub_3D 
 # environment
 ELECTRON_RUN_AS_NODE = 1
@@ -311,8 +1105,7 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 SNAP_COMMON = /var/snap/code/common
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
- 
-# makefile (from 'Makefile', line 46)
+# makefile (from 'Makefile', line 47)
 CC = gcc
 # environment
 SNAP_USER_DATA = /home/dracken24/snap/code/102
@@ -325,7 +1118,7 @@ GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=156/1024=15%, Rehash=0, Collisions=22/223=10%
+# Load=156/1024=15%, Rehash=0, Collisions=22/219=10%
 
 # Pattern-specific Variable Values
 
@@ -341,7 +1134,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Implicit Rules
 
 objs/%.o: src/%.c
-#  recipe to execute (from 'Makefile', line 71):
+#  recipe to execute (from 'Makefile', line 72):
 	@mkdir -p $(PATH_OBJS)
 	@mkdir -p $(PATH_OBJS)get_next_line
 	@mkdir -p $(PATH_OBJS)utils
@@ -351,6 +1144,7 @@ objs/%.o: src/%.c
 	@mkdir -p $(PATH_OBJS)move
 	@mkdir -p $(PATH_OBJS)ray
 	@mkdir -p $(PATH_OBJS)libft
+	@mkdir -p $(PATH_OBJS)get_next_line
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@printf "$(LIGHT_GREEN)■"
 
@@ -364,9 +1158,15 @@ objs/utils/utils.o:
 #  File has not been updated.
 
 # Not a target:
+objs/get_next_line/gnl_utils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-30 18:45:28.456126661
+#  Last modified 2022-08-01 23:59:04.541894468
 #  File has been updated.
 #  Successfully updated.
 
@@ -382,34 +1182,12 @@ objs/draw/draw_grid.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-# 'override' directive
-clean: .SHELLSTATUS := 0
 clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := clean
-# automatic
-# * := 
-# automatic
-# < := 
-# automatic
-# + := 
-# automatic
-# % := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=9/32=28%, Rehash=0, Collisions=3/21=14%
-#  recipe to execute (from 'Makefile', line 93):
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 95):
 	@rm -f $(OBJ) $(REMOVE)
 	@rm -fr ./objs ./minilibx/mlx-linux/obj/ ./minilibx/opengl/obj/
 	@$(MAKE) fclean -C ./src/libft
@@ -444,7 +1222,7 @@ push:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 88):
+#  recipe to execute (from 'Makefile', line 90):
 	@(git add .)
 	@(git commit -m "nadesjar42")
 	@(git push)
@@ -474,36 +1252,26 @@ objs/move/mouse.o:
 #  File has not been updated.
 
 # Not a target:
-objs/get_next_line/get_next_line_utils.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 objs/draw/draw_env.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-all: fclean all make_lib cub3D
+all: make_lib cub3D
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
+#  File has not been updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/12=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
 
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/12=0%
-#  recipe to execute (from 'Makefile', line 99):
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 101):
 	@rm -f $(NAME) $(LIBFT_A)
 
 # Not a target:
@@ -514,12 +1282,6 @@ objs/utils/check_boarder.o:
 
 # Not a target:
 objs/move/key_pressed.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-objs/get_next_line/get_next_line.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -536,24 +1298,44 @@ objs/draw/draw_raycast.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-cub3D: objs/cube3D.o objs/utils/utils.o objs/utils/check_entry.o objs/utils/check_boarder.o objs/get_next_line/get_next_line.o objs/get_next_line/get_next_line_utils.o objs/kill/kill_game.o objs/init/init_imgs.o objs/init/init_var.o objs/draw/draw_grid.o objs/draw/draw_env.o objs/draw/draw_raycast.o objs/move/key_pressed.o objs/move/mouse.o objs/move/key_press_suite.o objs/ray/raycast.o
+cub3D: objs/cube3D.o objs/utils/utils.o objs/utils/check_entry.o objs/utils/check_boarder.o objs/kill/kill_game.o objs/init/init_imgs.o objs/init/init_var.o objs/draw/draw_grid.o objs/draw/draw_env.o objs/draw/draw_raycast.o objs/move/key_pressed.o objs/move/mouse.o objs/move/key_press_suite.o objs/ray/raycast.o objs/get_next_line/gnl.o objs/get_next_line/gnl_utils.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 64):
+#  recipe to execute (from 'Makefile', line 65):
 	@echo $(LILAS)"COMPILATION DE Cub_3D EN COURS..."$(RESET)
 	@cp $(MLX_LIB_LINUX) $(NAME)
 	@gcc $(NAME) $(OBJS) $(MLX_LIB_LINUX) $(LIBFT_A) $(CFLAGS) $(MLXFLAG_LINUX) -o cub_3D
+ 
 	@echo $(LILAS)"CUBE READY !!!"$(RESET)
 	@./cub_3D maps/test_02.cub
 
- 
 make_lib:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
 #  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 84):
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := make_lib
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/15=20%
+#  recipe to execute (from 'Makefile', line 86):
 	@$(MAKE) -C ./src/libft
 	@$(MAKE) -C ./minilibx/mlx-linux
 
@@ -568,20 +1350,26 @@ make_lib:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+objs/get_next_line/gnl.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=27/1024=3%, Rehash=0, Collisions=0/71=0%
+# Load=27/1024=3%, Rehash=0, Collisions=0/70=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 46 / storage = 618 B / avg = 13 B
-# current buf: size = 8162 B / used = 618 B / count = 46 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 46 / storage = 598 B / avg = 13 B
+# current buf: size = 8162 B / used = 598 B / count = 46 / avg = 13 B
 
-# strcache performance: lookups = 75 / hit rate = 38%
+# strcache performance: lookups = 74 / hit rate = 37%
 # hash-table stats:
-# Load=46/8192=1%, Rehash=0, Collisions=0/75=0%
-# Finished Make data base on Sat Jul 30 18:46:00 2022
+# Load=46/8192=1%, Rehash=0, Collisions=0/74=0%
+# Finished Make data base on Mon Aug  1 23:59:13 2022
 
  

@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 16:22:57 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/30 20:02:26 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/30 23:17:07 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@ void	draw_env(t_game *game)
 			// 			game->ct.i * game->utils.tile_size, 557744);
 			if (game->map[game->ct.i][game->ct.k] == 'E')
 			{
-				mlx_put_image_to_window(game->mlx, game->win, game->imgs.wall.circle,
-						game->pos_real_p1.x, game->pos_real_p1.y);
+				// mlx_put_image_to_window(game->mlx, game->win, game->imgs.wall.circle,
+				// 		game->pos_real_p1.x, game->pos_real_p1.y);
 				draw_square(game, game->ct.xx , game->ct.yy, 999333);
 			}
 			// if (game->map[game->ct.i][game->ct.k] == 'W')
